@@ -1,6 +1,6 @@
 public class To_Uppercase {
     public static void main(String[] args){
-        Stirng str="hEllO wOrld";
+        String str="hEllO wOrld";
         char[] s=str.toCharArray();
         for(int i=0;i<s.length;i++){
             s[i]=(char)s[i-32];
