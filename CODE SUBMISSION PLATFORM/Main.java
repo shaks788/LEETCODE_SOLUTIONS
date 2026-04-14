@@ -2,15 +2,15 @@
 interface SubmissionHandler {
     void submitCode(String code);
     void evaluate();
-    void printSuccess(); // method for successful submission
+    void printSuccess(); 
 }
 
 // Abstract class (common base for all submissions)
 abstract class Submission implements SubmissionHandler {
-    private String studentName;   // Encapsulation
+    private String studentName; 
     private String code;
 
-    // Constructor with parameters
+    // Constructor
     public Submission(String studentName, String code) {
         this.studentName = studentName;
         this.code = code;
@@ -48,7 +48,7 @@ abstract class Submission implements SubmissionHandler {
         System.out.println(code);
     }
 
-    // Default implementation of success message
+    // Implementation of success message
     public void printSuccess() {
         System.out.println("Code submission by " + studentName + " was successful!");
     }
